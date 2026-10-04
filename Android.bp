@@ -1,0 +1,6 @@
+android_library {
+    name: "RRWallpapers-res",
+    manifest: "AndroidManifest.library.xml",
+    resource_dirs: ["wallpaper-res"],
+    sdk_version: "current",
+}
