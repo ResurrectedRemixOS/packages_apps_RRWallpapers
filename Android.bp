@@ -4,3 +4,13 @@ android_library {
     resource_dirs: ["wallpaper-res"],
     sdk_version: "current",
 }
+
+android_app {
+    name: "RRWallpapers",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    static_libs: ["androidx.cardview_cardview"],
+    sdk_version: "current",
+    certificate: "platform",
+    product_specific: true,
+}

@@ -13,6 +13,7 @@
          android:supportsRtl="true" >
         <activity
             android:name="Wallpaper"
+            android:exported="true"
             android:label="@string/rr_app_name"
             android:theme="@style/Preview"
             android:icon="@drawable/ic_launcher" >
@@ -22,7 +23,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".PartnerWallpapers">
+        <receiver android:name=".PartnerWallpapers"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION"/>
             </intent-filter>
